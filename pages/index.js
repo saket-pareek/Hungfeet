@@ -5,6 +5,7 @@ import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import Categories from "../components/Categories";
 import Bestsellers from "../components/Bestsellers";
+import Showcase from "../components/Showcase";
 import Featured from "../components/Featured";
 import News from "../components/News";
 import Testimonials from "../components/Testimonials";
@@ -22,6 +23,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <Categories />
+      <Showcase />
       <Bestsellers />
       <Featured />
       <News />

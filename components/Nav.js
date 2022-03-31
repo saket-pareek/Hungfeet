@@ -22,7 +22,7 @@ const Nav1 = () => {
 };
 
 const Nav2 = () => {
-  const CATEGORIES = [
+  const LINKS = [
     "New Arrivals",
     "Best Sellers",
     "Featured",
@@ -39,11 +39,19 @@ const Nav2 = () => {
   return (
     <div className="flex justify-center">
       <ul className="hidden lg:flex py-5 space-x-5 xl:space-x-8 px-5 whitespace-nowrap">
-        {CATEGORIES.map((link) => {
+        {LINKS.map((link) => {
           if (link === "Sale") {
-            return <li className="text-sm xl:text-[0.95rem] text-red-600">{link}</li>;
+            return (
+              <li key={link} className="text-sm xl:text-[0.95rem] text-red-600">
+                {link}
+              </li>
+            );
           } else {
-            return <li className="text-sm xl:text-[0.95rem]">{link}</li>;
+            return (
+              <li key={link} className="text-sm xl:text-[0.95rem]">
+                {link}
+              </li>
+            );
           }
         })}
       </ul>
